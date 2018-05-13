@@ -5,10 +5,7 @@ def to_hex(r, g, b)
 end
 
 def to_int(hex)
-  r = hex[1..2]
-  g = hex[3..4]
-  b = hex[4..6]
-  [r, g, b].map do |s|
+  hex.scan(/\w\w/).map do |s|
    s.hex
   end
 end
