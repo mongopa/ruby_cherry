@@ -8,4 +8,11 @@ class RgbTest < Minitest::Test
     assert_equal '#043c78' , to_hex(4, 60, 120)
 
   end
+
+  def test_to_int
+    assert_equal [0, 0, 0] , to_int('#000000')
+    # assert_equal '#ffffff' , to_hex(255, 255, 255)
+    # assert_equal '#043c78' , to_hex(4, 60, 120)
+
+  end
 end
